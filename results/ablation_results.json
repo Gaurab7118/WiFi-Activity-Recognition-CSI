@@ -1,0 +1,43 @@
+{
+  "normalization_ablation": {
+    "none": {
+      "room_accuracy": 1.0,
+      "activity_f1_room_a": 0.898139101976488
+    },
+    "zscore": {
+      "room_accuracy": 1.0,
+      "activity_f1_room_a": 0.7759158082218157
+    },
+    "static_removal": {
+      "room_accuracy": 1.0,
+      "activity_f1_room_a": 0.04844961240310078
+    }
+  },
+  "representation_ablation": {
+    "raw_csi": 0.04844961240310078,
+    "random_untrained": 0.33119650893658625,
+    "ssl_pretrained": 0.7256496969846736
+  },
+  "alignment_metric_ablation": {
+    "Euclidean_NoAlign": {
+      "overall_f1": 0.16665602950040775,
+      "exclusive_f1": 0.5973544973544973,
+      "shared_f1": 0.056140350877192984
+    },
+    "Euclidean_Aligned": {
+      "overall_f1": 0.26207227941717404,
+      "exclusive_f1": 0.5119565217391304,
+      "shared_f1": 0.20763842514112205
+    },
+    "Cosine_NoAlign": {
+      "overall_f1": 0.1698143664245359,
+      "exclusive_f1": 0.6100483498002943,
+      "shared_f1": 0.056140350877192984
+    },
+    "Cosine_Aligned": {
+      "overall_f1": 0.2633591691761967,
+      "exclusive_f1": 0.5144736842105263,
+      "shared_f1": 0.20635613900813063
+    }
+  }
+}
